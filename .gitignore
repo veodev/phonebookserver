@@ -1,0 +1,37 @@
+# temp files
+*~
+
+# project files
+CMakeLists.txt.user*
+*.pro.user
+*.user
+*.user.*
+*.txt.user.*
+*.kdev4
+*.kdev*
+.kdev4
+.classpath
+.project
+.settings
+local.properties
+**/gradle.properties
+
+# build artifacts
+bin
+lib
+gen
+obj
+build
+QtLogger
+moc_*.c??
+uic_*.c??
+rcc_*.c??
+*.autosave
+lib*.so
+lib*.a
+*.qm
+
+*.class
+*.apk
+*.ap_
+*.dex
