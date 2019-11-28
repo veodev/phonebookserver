@@ -47,7 +47,7 @@ private:
             phone.clear();
         }
     };
-    QMap<int, Item> _contacts;
+    QList<Item> _contacts;
     QByteArray _messagesBuffer;
     Item _bufferItem;
     int _itemIndex;

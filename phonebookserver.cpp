@@ -76,7 +76,7 @@ void Server::readFromXmlFile()
         }
 
         if (isContactFilled) {
-            _contacts.insert(_itemIndex, _bufferItem);
+            _contacts.push_back(_bufferItem);
             isContactFilled = false;
         }
         xmlReader.readNext();
@@ -89,6 +89,7 @@ void Server::writeToXmlFile()
     if (_contacts.empty()) {
         return;
     }
+
     QFile phoneBookFile(PHONEBOOK_FILENAME);
     phoneBookFile.open(QFile::ReadWrite | QFile::Truncate);
     QXmlStreamWriter xmlWriter(&phoneBookFile);
