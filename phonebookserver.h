@@ -23,6 +23,7 @@ private:
     void readMessageFromBuffer();
     void updateClientData();
     void sendMessage(QByteArray& message);
+    void parseContact(QByteArray& data);
 
 private slots:
     void closeConnection();
